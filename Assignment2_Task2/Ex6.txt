@@ -1,0 +1,58 @@
+x= 123
+for i in x:
+    print(i)
+
+Output: Error since x is a value and i cannot itterate in this case.
+
+----------------------------------------
+i=0
+while i < 5:
+print(i)
+i += 1
+if i == 3:
+break
+else:
+print(“error”)
+
+Output- 
+0
+1
+2
+
+----------------------------------------
+count= 0
+while True:
+print(count)
+count += 1
+if count >= 5:
+Break
+
+Output:
+0
+1
+2
+3
+4
+
+----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
