@@ -1,0 +1,7 @@
+#extensions to ignore
+
+*.exe
+*.o
+*.jar
+**/libraries
+
