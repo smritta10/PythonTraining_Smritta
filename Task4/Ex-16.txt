@@ -1,0 +1,26 @@
+#Ex- 16
+
+i) def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)
+
+Output- 2
+because it will first return 1 then finally block will get executed and overrite 1 with 2. 
+----------------------------------------------------------
+
+ii) def a():
+    try:
+        f(x, 4)
+    finally:
+        print('after f')
+        print('after f?')
+a()
+
+Output-> will be
+after f
+after f?
+But will also throw error for function f(x,4) which doesn't exist
