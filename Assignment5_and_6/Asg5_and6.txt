@@ -1,0 +1,133 @@
+#Task5
+
+#Ex-1
+var= 'Smritta'
+try:
+    x= var/0
+
+--------------------------------------------------------
+# Ex-2               #how to use argv module
+
+import sys
+
+with open(sys.argv['C:/Users/Smritta-3c/Desktop/Python_CA/Assignments/Assignment5_and_6/doc.txt'], "r") as f:
+    #print(f.read())
+ 
+
+
+--------------------------------------------------------
+
+#Ex- 3
+
+var= (input('Enter a number to check if it has more than 4 digits: '))
+L= len(var)
+
+try:
+    assert L<=4
+except:
+    print('The length is too short/long!!! Please provide only 4 digits')
+else:
+    print('Number of digits: ', L)
+	
+----------------------------------------------------------
+Ex-4
+
+
+user_name= input('Enter your username: ')
+password1 = input('Enter your password: ')
+password2 = input('Re-Type your password: ')
+
+i=1
+while(i<=3): 
+    try:
+        assert password1 ==password2
+    except:
+        print("Password didn't match, Re-type your password: ")
+        break
+    else:
+        print('You have logged in successfully')
+        break
+i+=1
+
+------------------------------------------------------------------------
+Ex- 6
+
+with open("C:/Users/Smritta-3c/Desktop/Python_CA/Assignments/Assignment5_and_6/doc.txt", "r") as f:
+    #print(f.read())
+    for line in f:
+        for word in line.split():
+            x= len(word)
+            if (x%2 ==0):
+                print(word)
+
+
+******************************************************************
+******************************************************************
+# Task 6
+
+
+#Ex-1
+
+str= input('Enter a string having uppercase letter: ')
+
+U= [i for i in str if i.isupper()]
+print("Upper case character in string is", U)
+
+------------------------------------------------
+
+# Ex-2
+
+students = ['Smit', 'Jaya', 'Rayyan'] 
+subjects = ['CSE', 'Networking', 'Operating System']
+
+dic= dict(zip(students, subjects))
+print("Dictionary is:", dic)
+
+--------------------------------------------
+# Ex-4
+
+def reverse_string(my_str):
+    for i in range(len(my_str)-1,-1,-1):
+        yield my_str[i]
+
+
+for char in reverse_string("study"):
+    print(char)
+---------------------------------------------
+Ex- 5
+
+def first_deco(func):
+    def sec_deco(x):
+        print("Before calling func: ", func.__name__)
+        res= func(x)
+        print(res)
+        print("After calling func: ", func.__name__)
+    return sec_deco
+
+@first_deco
+def display(n):
+    return n+1
+
+display(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
