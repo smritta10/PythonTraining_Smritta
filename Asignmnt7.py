@@ -38,10 +38,28 @@ class Square(Shape):
 ob1= Square(10)
 print(ob1.area())
 
--------------------------------------------
+------------------------------------------
+# EX-4  (need to do this again with more clarity)
 
-# Ex-5
-
+class Time:
+    def __init__(self, hours,minutes):
+        self.hours= hours
+        self.minutes= minutes
+        
+    def addTime(obj1, obj2):
+        hours= obj1.hours+ obj2.hours
+        min1= obj1.minutes+ obj2.minutes
+    
+    def displayTime():
+        print(str(hours)+ ' hour and' + str(min1) +' minutes')
+              
+    def displayMinute():
+        print(hours*60 + min1)
+        
+obj1= Time(1,32)
+obj2= Time(2,50)
+addTime(obj1, obj2)
+displayTime()
 
 
 
