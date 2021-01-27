@@ -1,0 +1,6 @@
+<h1>Blog_Posts Delete</h1>
+<form method="post">
+    {% csrf_token %}
+    Confirm you want to delete "{{ object }}" ?
+    <input type="submit" value="Submit" />
+</form>
